@@ -1,10 +1,40 @@
 .App {
   text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.chess-piece__white {
+  color: #fff;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.chess-piece__black {
+  color: #000;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.chess-board {
+  margin: 0 auto;
+}
+
+.chess-board td {
+  width: 50px;
+  height: 50px;
+}
+
+.chess-board .square__dark-brown {
+  background-color: #753000;
+}
+.chess-board .square__light-brown {
+  background-color: #C9A26A;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -15,7 +45,6 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
