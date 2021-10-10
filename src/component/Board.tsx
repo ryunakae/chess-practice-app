@@ -10,15 +10,10 @@ import {
 
 const Board = () => {
   return (
-    <>
-      <table className="chess-board">
+    <div className="chess-board">
+      <table>
         <tr>
-          <td className="square__light-brown">
-            <FontAwesomeIcon
-              className="chess-piece__white"
-              icon={faChessRook}
-            />
-          </td>
+          <td className="square__light-brown"></td>
           <td className="square__dark-brown">
             <FontAwesomeIcon
               className="chess-piece__white"
@@ -255,7 +250,10 @@ const Board = () => {
           </td>
         </tr>
       </table>
-    </>
+      <div className="chess-piece__white rook-a">
+        <FontAwesomeIcon icon={faChessRook} />
+      </div>
+    </div>
   );
 };
 
