@@ -12,17 +12,19 @@
 .chess-piece__white {
   color: #fff;
   font-size: 30px;
-  padding: 10px;
+  width: 52px;
+  height: 52px;
 }
 
 .chess-piece__black {
   color: #000;
   font-size: 30px;
-  padding: 10px;
 }
 
 .chess-board {
   margin: 0 auto;
+  width: 434px;
+  position: relative;
 }
 
 .chess-board td {
@@ -35,6 +37,15 @@
 }
 .chess-board .square__light-brown {
   background-color: #C9A26A;
+}
+
+.rook-a {
+  position: absolute;
+  top: 0.5%;
+  left: 0.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
